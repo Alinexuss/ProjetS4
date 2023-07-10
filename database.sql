@@ -32,4 +32,24 @@ CREATE TABLE objectifUtilisateur (
 );
 
 -- Donnees sur les programmes 
-    
+CREATE TABLE exercice (
+    idExercice INTEGER PRIMARY KEY ,
+    exercice VARCHAR(25) NOT NULL ,
+    durree TIME NOT NULL ,
+    rapportKcal FLOAT NOT NULL
+);
+
+CREATE TABLE sceance (
+    idSceance INTEGER PRIMARY KEY ,
+    idExercice INT ,
+    FOREIGN KEY idExercice REFERENCES exercice(idExercice)
+);
+
+CREATE TABLE regime (
+    idRegime INTEGER PRIMARY KEY ,
+    heure TIME NOT NULL ,
+    aliment VARCHAR(255) NOT NULL ,
+    rapportKcal FLOAT NOT NULL
+);
+
+

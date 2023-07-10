@@ -9,20 +9,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(); ?>assets/img/63dc95d6ac2d13ed84b2824774fefd81.jpg">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/themify-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/nice-select.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/flaticon.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/animate.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/slicknav.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/homeStyle.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -63,7 +63,7 @@
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo-img">
                                 <a href="index.html">
-                                    <img src="<?php echo base_url(); ?>assets/img/" alt="">
+                                    <img src="<?php echo base_url(); ?>assets/img/63dc95d6ac2d13ed84b2824774fefd81.jpg" class="logo" id="logo">
                                 </a>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                                     </ul>
                                 </div>
                                 <div class="book_btn d-none d-xl-block">
-                                    <a class="#" href="#">+10 367 453 7382</a>
+                                    <a class="profil" href="profil">User</a>
                                 </div>
                             </div>
                         </div>
@@ -117,11 +117,11 @@
                         <div class="col-xl-9 col-md-9 col-md-12">
                             <div class="slider_text text-center">
                                 <div class="deal_text">
-                                    <span>Big Deal</span>
+                                    <span>Big Workout</span>
                                 </div>
-                                <h3>Burger <br>
-                                    Bachelor</h3>
-                                <h4>Maxican</h4>
+                                <h3>Nutrition For <br>
+                                    training</h3>
+                                <h4>Vegetable</h4>
                             </div>
                         </div>
                     </div>
@@ -135,9 +135,9 @@
                                 <div class="deal_text">
                                     <span>Big Deal</span>
                                 </div>
-                                <h3>Burger <br>
-                                    Bachelor</h3>
-                                <h4>Maxican</h4>
+                                <h3>Fattening<br>
+                                    Food</h3>
+                                <h4>American</h4>
                             </div>
                         </div>
                     </div>
@@ -152,111 +152,60 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section_title text-center mb-80">
-                        <span>Burger Menu</span>
-                        <h3>Best Ever Burgers</h3>
+                        <span>Workout Proram</span>
+                        <h3>Fattening & Training Food</h3>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-6 col-md-6 col-lg-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/1.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Beefy Burgers</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="card mb-3">
+                      <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/burger/1.avif" alt="Card image cap" />
+                      <div class="card-body">
+                        <h5 class="card-title">Program 1</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a natural lead-in to additional content. This
+                          content is a little bit longer.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted">Last updated 3 mins ago</small>
+                        </p>
+                      </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/2.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Burger Boys</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
+                  </div>
+                  <div class="col-md-6 col-xl-4">
+                    <div class="card mb-3">
+                      <div class="card-body">
+                        <h5 class="card-title">Program 2</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a natural lead-in to additional content. This
+                          content is a little bit longer.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted">Last updated 3 mins ago</small>
+                        </p>
+                      </div>
+                      <img class="card-img-bottom" src="<?php echo base_url(); ?>assets/img/burger/1.avif" alt="Card image cap" />
                     </div>
-
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/3.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Burger Bizz</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-md-6 col-lg-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/4.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Crackles Burger</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/5.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Bull Burgers</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/6.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Rocket Burgers</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/7.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Smokin Burger</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/8.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Delish Burger</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
+                  </div>
+                  <div class="col-md-6 col-xl-4">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/burger/1.avif" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">Program 3</h5>
+                            <p class="card-text">
+                            This is a wider card with supporting text below as a natural lead-in to additional content. This
+                            content is a little bit longer.
+                            </p>
+                            <p class="card-text">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+           
+        </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="iteam_links">
@@ -271,7 +220,7 @@
             <div class="Burger_President_here">
                 <div class="single_Burger_President">
                     <div class="room_thumb">
-                        <img src="img/burgers/1.png" alt="">
+                        <img src="<?php echo base_url(); ?>assets/img/burgers/1.png" alt="">
                         <div class="room_heading d-flex justify-content-between align-items-center">
                             <div class="room_heading_inner">
                                 <span>$20</span>
@@ -285,7 +234,7 @@
                 </div>
                 <div class="single_Burger_President">
                     <div class="room_thumb">
-                        <img src="img/burgers/2.png" alt="">
+                        <img src="<?php echo base_url(); ?>assets/img/burgers/2.png" alt="">
                         <div class="room_heading d-flex justify-content-between align-items-center">
                             <div class="room_heading_inner">
                                 <span>$20</span>
@@ -306,10 +255,10 @@
                     <div class="col-xl-6 col-lg-6 col-md-6">
                         <div class="about_thumb2">
                             <div class="img_1">
-                                <img src="img/about/1.png" alt="">
+                                <img src="<?php echo base_url(); ?>assets/img/about/1.png" alt="">
                             </div>
                             <div class="img_2">
-                                <img src="img/about/2.png" alt="">
+                                <img src="<?php echo base_url(); ?>assets/img/about/2.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -322,7 +271,7 @@
                             </div>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate</p>
                             <div class="img_thumb">
-                                <img src="img/jessica-signature.png" alt="">
+                                <img src="<?php echo base_url(); ?>assets/img/jessica-signature.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -369,7 +318,7 @@
                                                     neque.</p>
                                                 <div class="testmonial_author">
                                                     <div class="thumb">
-                                                        <img src="img/testmonial/1.png" alt="">
+                                                        <img src="<?php echo base_url(); ?>assets/img/testmonial/1.png" alt="">
                                                     </div>
                                                     <h4>Kristiana Chouhan</h4>
                                                     <div class="stars">
@@ -394,7 +343,7 @@
                                                     neque.</p>
                                                 <div class="testmonial_author">
                                                     <div class="thumb">
-                                                        <img src="img/testmonial/2.png" alt="">
+                                                        <img src="<?php echo base_url(); ?>assets/img/testmonial/2.png" alt="">
                                                     </div>
                                                     <h4>Arafath Hossain</h4>
                                                     <div class="stars">
@@ -419,7 +368,7 @@
                                                     neque.</p>
                                                 <div class="testmonial_author">
                                                     <div class="thumb">
-                                                        <img src="img/testmonial/3.png" alt="">
+                                                        <img src="<?php echo base_url(); ?>assets/img/testmonial/3.png" alt="">
                                                     </div>
                                                     <h4>A.H Shemanto</h4>
                                                     <div class="stars">
@@ -447,7 +396,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="single_instagram">
-                    <img src="img/instragram/1.png" alt="">
+                    <img src="<?php echo base_url(); ?>assets/img/instragram/1.png" alt="">
                     <div class="ovrelay">
                         <a href="#">
                             <i class="fa fa-instagram"></i>
@@ -457,7 +406,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="single_instagram">
-                    <img src="img/instragram/2.png" alt="">
+                    <img src="<?php echo base_url(); ?>assets/img/instragram/2.png" alt="">
                     <div class="ovrelay">
                         <a href="#">
                             <i class="fa fa-instagram"></i>
@@ -467,7 +416,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="single_instagram">
-                    <img src="img/instragram/3.png" alt="">
+                    <img src="<?php echo base_url(); ?>assets/img/instragram/3.png" alt="">
                     <div class="ovrelay">
                         <a href="#">
                             <i class="fa fa-instagram"></i>
@@ -477,7 +426,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="single_instagram">
-                    <img src="img/instragram/4.png" alt="">
+                    <img src="<?php echo base_url(); ?>assets/img/instragram/4.png" alt="">
                     <div class="ovrelay">
                         <a href="#">
                             <i class="fa fa-instagram"></i>
@@ -579,31 +528,31 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
     <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/popper.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/owl.carousel.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/isotope.pkgd.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/ajax-form.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/waypoints.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery.counterup.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/scrollIt.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery.scrollUp.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/wow.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/nice-select.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery.slicknav.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/plugins.js"></script>
 
     <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/contact.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery.form.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery.validate.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/mail-script.js"></script>
 
-    <script src="js/main.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/main.js"></script>
 
 </body>

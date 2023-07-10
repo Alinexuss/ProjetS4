@@ -12,4 +12,5 @@
         <p><input type="number" name="durree" placeholder="duree de l'exercice"></p>
         <p><input type="number" name="rapportKcal" placeholder="rapportKcal"></p>
         <p><input type="submit" value="OK"></p>
+        <p><a href="add_seance">ajouter une seance d'exercice</a></p>
     </form>

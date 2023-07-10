@@ -40,9 +40,10 @@ CREATE TABLE exercice (
     rapportKcal FLOAT NOT NULL
 );
 
-CREATE TABLE sceance (
+CREATE TABLE seance (
     idSceance INT auto_increment PRIMARY KEY ,
     idExercice INT ,
+    repetition int,
     FOREIGN KEY (idExercice) REFERENCES exercice(idExercice)
 );
 

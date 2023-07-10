@@ -19,4 +19,6 @@
             <p><input type="number" name="prixUnitaire" placeholder="prix"></p>
             <p><input type="submit" value="OK"></p>
     </form>
+    <p><a href="add_session">ajouter une session de regime </a></p>
+
 </body>

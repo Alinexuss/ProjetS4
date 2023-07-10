@@ -31,9 +31,7 @@ class Inscription extends CI_Controller {
 
 		$this->inscription_model->insert_user();
 
-        $max = $this->inscription_model->getMax();
-
-        $id = $this->inscription_model->get_last_id($max);
+        $id = $this->inscription_model->get_last_id();
 
         $this->session->set_userdata('idUtilisateur',$id);
 

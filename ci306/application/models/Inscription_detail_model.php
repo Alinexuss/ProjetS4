@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Inscription_model extends CI_Model {
+class Inscription_detail_model extends CI_Model {
     public $taille;
     public $genre;
-    public $poid;
+    public $poids;
     public $idUtilisateur;
 
     public function insert_user_detail(){
@@ -20,3 +20,4 @@ class Inscription_model extends CI_Model {
 		$this->db->insert('detailUtilisateur', $this);
     }
 }
+

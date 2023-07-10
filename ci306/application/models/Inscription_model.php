@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Inscription_model extends CI_Model {
 
+	public $idUtilisateur;
 	public $nom;
 	public $email;
 	public $mdp;
@@ -20,5 +21,4 @@ class Inscription_model extends CI_Model {
 
 		$this->db->insert('utilisateur', $this);
 	}
-	
 }

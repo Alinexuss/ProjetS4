@@ -8,7 +8,7 @@ class Regime_utilisateur_model extends CI_Model {
     public function insert_type_regime(){
         $this->load->database();
 		
-		$this->$idObjectif = $this->input->post('$idObjectif');
+		$this->idObjectif = $this->input->post('idObjectif');
 
         $this->kilo = $this->input->post('kilo');
 

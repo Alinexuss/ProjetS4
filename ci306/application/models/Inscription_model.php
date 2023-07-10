@@ -21,12 +21,4 @@ class Inscription_model extends CI_Model {
 
 		$this->db->insert('utilisateur', $this);
 	}
-
-	public function get_last_id(){
-		$this->load->database();
-		$sql="SELECT * from utilisateur where idutilisateur=(SELECT max(idutilisateur) from utilisateur) ";
-		$query=$this->db->query($sql);
-		return $query->result();
-    }
-
 }

@@ -9,7 +9,9 @@
     <body>
         <div id="inscr">
             <form action="inscription_detail/add" method="POST">
-                <h3>Inscription Details</h3>
+                
+                <h3>Inscription Details </h3>
+                
                 <p><input type="number" name="poids" placeholder="poids"></p>
                 <p><input type="number" name="taille" placeholder="taille"></p>
                 <p>genre
@@ -18,7 +20,9 @@
                         <option value="1">Femme</option>
                     </select>
                 </p>
-                <p><input type="hidden" name="idUtilisateur" value="0"></p>
+                <?php foreach($idUtilisateur as $user) { ?>
+                <p><input type="hidden" name="idUtilisateur" value="<?php echo $user->idUtilisateur ?> "></p>
+                <?php } ?>
 
                 <p><input type="submit" value="OK"></p>
             </form>

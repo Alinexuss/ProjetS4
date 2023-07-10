@@ -20,14 +20,18 @@ class Regime_utilisateur extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('regime_utilisateur');
+		$idUtilisateur = $this->session->userdata('idUtilisateur');
+
+		$data['idUtilisateur'] = $idUtilisateur;
+
+		$this->load->view('regime_utilisateur',$data);
 		
 	}
     public function add()
 	{
 		$this->load->model('Regime_utilisateur_model');
 
-		$this->inscription_model->insert_type_regime();
+		$this->Regime_utilisateur_model->insert_type_regime();
 
 		redirect(base_url('home/'));
 

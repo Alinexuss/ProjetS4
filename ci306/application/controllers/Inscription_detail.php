@@ -19,18 +19,23 @@ class Inscription_detail extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
+
 	{
-		$this->load->view('inscription_detail');
+		$idUtilisateur = $this->session->userdata('idUtilisateur');
+
+		$data['idUtilisateur'] = $idUtilisateur;
+
+		$this->load->view('inscription_detail',$data);
 		
 	}
 
     public function add()
 	{
-		$this->load->model('inscription_detail_model');
+		$this->load->model('Inscription_detail_model');
 
-		$this->inscription_model->insert_user_detail();
+		$this->Inscription_detail_model->insert_user_detail();
 
-		redirect(base_url('user_regime/'));
+		redirect(base_url('regime_utilisateur/'));
 
 	}
 }

@@ -15,7 +15,7 @@ CREATE TABLE detailUtilisateur (
     genre INT NOT NULL ,
     taille FLOAT NOT NULL ,
     poids INT NOT NULL ,
-    FOREIGN KEY idUtilisateur REFERENCES utilisateur(idUtilisateur)
+    FOREIGN KEY (idUtilisateur) REFERENCES utilisateur(idUtilisateur)
 );
 
 CREATE TABLE objectif (
@@ -27,8 +27,8 @@ CREATE TABLE objectifUtilisateur (
     idObjectif INT NOT NULL ,
     idUtilisateur INT NOT NULL ,
     kilo INT NOT NULL ,
-    FOREIGN KEY idObjectif REFERENCES objectif(idObjectif) ,
-    FOREIGN KEY idUtilisateur REFERENCES utilisateur(idUtilisateur) 
+    FOREIGN KEY (idObjectif) REFERENCES objectif(idObjectif) ,
+    FOREIGN KEY (idUtilisateur) REFERENCES utilisateur(idUtilisateur) 
 );
 
 -- Donnees sur les programmes 

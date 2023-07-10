@@ -18,5 +18,5 @@ class Inscription_model extends CI_Model {
         $this->idUtilisateur = $this->input->post('idUtilisateur');
 
 		$this->db->insert('detailUtilisateur', $this);
-
+    }
 }

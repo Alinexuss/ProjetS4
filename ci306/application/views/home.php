@@ -8,6 +8,10 @@
     </head>
         <body>
             <h3>welcome to Home page</h3>
+            <div id="proposition">
+                <h4>proposition de regime selon votre objectif</h4>
+            </div>
+            <br>
             <br>
             <a href="home/deconnection">deconnection</a>
         </body>

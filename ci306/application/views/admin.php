@@ -30,9 +30,6 @@
                 <br>
             <?php } ?>
             <a href="add_exercice">ajouter un exercice</a>
-            <br>
-            <br>
-            <a href="login">deconnexion</a>
            
         </body>
     </head>

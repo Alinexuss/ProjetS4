@@ -20,10 +20,9 @@
             <form action="inscription/add" method="POST" class="appointment-form" id="appointment-form">
                 <h2>Sport & Alimentation</h2>
                 <div class="form-group-1">
-                    <input type="text" name="title" id="title" placeholder="Title" required />
-                    <input type="text" name="name" id="name" placeholder="Your Name" required />
+                    <input type="text" name="nom" id="nom" placeholder="Your Name" required />
                     <input type="email" name="email" id="email" placeholder="Email" required />
-                    <input type="password" name="password" id="password" placeholder="Your password" required />
+                    <input type="password" name="mdp" id="mdp" placeholder="Your mdp" required />
                 </div>
                 <div class="form-submit">
                     <input type="submit" name="submit" id="submit" class="submit" value="Sign up" />

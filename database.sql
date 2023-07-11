@@ -40,11 +40,13 @@ CREATE TABLE exercice (
     rapportKcal FLOAT NOT NULL
 );
 
-CREATE TABLE sceance (
+CREATE TABLE seance (
     idSceance INT auto_increment PRIMARY KEY ,
     idExercice INT ,
+    repetition int,
     FOREIGN KEY (idExercice) REFERENCES exercice(idExercice)
 );
+create or replace view seance_detail as select s.idSceance,e.exercice,s.repetition from seance as s join exercice as e on s.idExercice=e.idExercice;
 
 CREATE TABLE regime (
     idRegime INT auto_increment PRIMARY KEY ,
@@ -59,6 +61,7 @@ CREATE TABLE session (
     duree INT,
     FOREIGN KEY (idRegime) REFERENCES regime(idRegime)
 );
+create or replace view session_detail as select s.idSession,r.aliment,s.duree from regime as r join session as s on r.idRegime=s.idRegime;
 
 -- Programme d'ajustement des options de comptes
 CREATE TABLE optionCompte (

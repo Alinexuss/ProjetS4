@@ -26,6 +26,7 @@
     <div class="contents order-2 order-md-1">
 
       <div class="container">
+        <a href="inscription">Sign up</a>
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7">
             <h3>Login to <strong>Foodsport</strong></h3>

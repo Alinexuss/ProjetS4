@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Add_exercice_model extends CI_Model {
+class Programme extends CI_Model {
     public $exercice;
     public $durree;
     public $rapportKcal;

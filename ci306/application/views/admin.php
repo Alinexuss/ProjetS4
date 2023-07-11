@@ -8,6 +8,7 @@
     </head>
         <body>
             <h3>tableau de bord</h3>
+            <a href="graph">voir graph</a>
             <h4>liste des utilisateurs</h4>
             <?php foreach($utilisateur as $user) { ?>
                 <?php echo $user->nom ?>

@@ -55,7 +55,7 @@ CREATE TABLE regime (
     rapportKcal FLOAT NOT NULL,
     prixUnitaire float not null
 );
-CREATE TABLE session(
+CREATE TABLE session (
     idSession INT auto_increment PRIMARY KEY ,
     idRegime INT,
     duree INT,
@@ -63,7 +63,23 @@ CREATE TABLE session(
 );
 create or replace view session_detail as select s.idSession,r.aliment,s.duree from regime as r join session as s on r.idRegime=s.idRegime;
 
-insert into objectif(idObjectif,typeObjectif) values (0,"prendre du poinds");
-insert into objectif(idObjectif,typeObjectif) values (1,"perdre du poinds");
+-- Programme d'ajustement des options de comptes
+CREATE TABLE optionCompte (
+    idOption INT auto_increment PRIMARY key ,
+    optionCompte VARCHAR(25)
+);
 
+CREATE TABLE utilisateurCompte (
+    idUtilisateur INT ,
+    idOption INT DEFAULT '1',
+    FOREIGN KEY (idUtilisateur) REFERENCES utilisateur(idUtilisateur) ,
+    FOREIGN KEY (idOption) REFERENCES optionCompte(idOption)
+);
 
+insert into objectif(idObjectif,typeObjectif) values (0,"prendre du poids");
+insert into objectif(idObjectif,typeObjectif) values (1,"perdre du poids");
+insert into objectif(idObjectif,typeObjectif) values (2,"atteindre son IMC ideal");
+
+insert into optionCompte(optionCompte) VALUE ("normal");
+insert into optionCompte(optionCompte) VALUE ("gold");
+insert into optionCompte(optionCompte) VALUE ("master");

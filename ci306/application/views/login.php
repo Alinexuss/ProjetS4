@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
 
     <!-- Style -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/loginStyle.css">
 
     <title>Log in</title>
   </head>
@@ -26,21 +26,21 @@
     <div class="contents order-2 order-md-1">
 
       <div class="container">
+        <a href="inscription">Sign up</a>
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7">
             <h3>Login to <strong>Foodsport</strong></h3>
-            <form action="inscription/add" method="post">
+            <form action="Login/checkUser" method="post">
+              <?php if(isset($error)) { ?>
+              <p><?php echo $error ?></p>
+              <?php } ?>
               <div class="form-group first">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" placeholder="Your Name" id="username">
-              </div>
-              <div class="form-group first">
-                <label for="emial">Email</label>
-                <input type="text" class="form-control" placeholder="your mail@gmail.com" id="email">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" placeholder="your mail@gmail.com" id="email" name="email">
               </div>
               <div class="form-group last mb-3">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" placeholder="Your Password" id="password">
+                <input type="password" class="form-control" placeholder="Your Password" id="password" name="password">
               </div>
               <div class="d-flex mb-5 align-items-center">
                 <p><input type="hidden" name="typeUtilisateur" value="0"></p>

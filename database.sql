@@ -57,7 +57,7 @@ CREATE TABLE regime (
     rapportKcal FLOAT NOT NULL,
     prixUnitaire float not null
 );
-CREATE TABLE session(
+CREATE TABLE session (
     idSession INT auto_increment PRIMARY KEY ,
     idRegime INT,
     duree INT,
@@ -65,14 +65,22 @@ CREATE TABLE session(
 );
 create or replace view session_detail as select s.idSession,r.aliment,s.duree,r.rapportKcal from regime as r join session as s on r.idRegime=s.idRegime;
 
+
 create or replace view calorie_seance as select (repetition*rapportKcal) as calorie,idsceance from seance_detail;
 
 create or replace view calorie_session as select (duree*rapportKcal) as calorie,idSession from session_detail;
 
+CREATE TABLE utilisateurCompte (
+    idUtilisateur INT ,
+    idOption INT DEFAULT '1',
+    FOREIGN KEY (idUtilisateur) REFERENCES utilisateur(idUtilisateur) ,
+    FOREIGN KEY (idOption) REFERENCES optionCompte(idOption)
+);
 
 insert into objectif(idObjectif,typeObjectif) values (0,"prendre du poids");
 insert into objectif(idObjectif,typeObjectif) values (1,"perdre du poids");
 insert into objectif(idObjectif,typeObjectif) values (2,"atteindre son IMC ideal");
+
 
 insert into regime(heure,aliment,rapportKcal,prixUnitaire) values (6,'poulet soupe',200,15000);
 insert into regime(heure,aliment,rapportKcal,prixUnitaire) values (12,'legumes sautes',50,10000);

@@ -1,0 +1,25 @@
+* {
+    color: #E8AEB7;
+}
+
+body {
+    background-image: url("../img/burger/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-position: center center;
+    font-weight: 400;
+}
+
+input#size.form-control,
+input#email.form-control,
+input#password.form-control,
+input#first_name.form-control,
+input#weight.form-control {
+    background-color: hsla(0, 0%, 100%, 0.172);
+    border: none;
+    color: #fff;
+}

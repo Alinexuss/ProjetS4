@@ -1,21 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>inscription</title>
-	<link rel="stylesheet" href="assets/css/style_signUp.css">
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Foodsport</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/inscriptionStyle.css">
 </head>
-    <body>
-        <div id="inscr">
-            <form action="inscription/add" method="POST">
-                <h3>Inscription</h3>
-                <p><input type="texte" name="nom" placeholder="Nom"></p>
-                <p><input type="email" name="email" placeholder="email"></p>
-                <p><input type="password" name="mdp" placeholder="mot de passe"></p>
-                <p><input type="hidden" name="typeUtilisateur" value="0"></p>
-                <p><input type="submit" value="OK"></p>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <form action="inscription/add" method="POST" class="appointment-form" id="appointment-form">
+                <h2>Sport & Alimentation</h2>
+                <div class="form-group-1">
+                    <input type="text" name="nom" id="nom" placeholder="Your Name" required />
+                    <input type="email" name="email" id="email" placeholder="Email" required />
+                    <input type="password" name="mdp" id="mdp" placeholder="Your mdp" required />
+                </div>
+                <div class="form-submit">
+                    <input type="submit" name="submit" id="submit" class="submit" value="Sign up" />
+                </div>
             </form>
         </div>
-    </body>
+
+    </div>
+
+    <script src="<?php echo base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/main.js"></script>
+</body>
 </html>

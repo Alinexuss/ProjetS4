@@ -20,6 +20,27 @@ class Admin extends CI_Controller {
 		$this->load->view('admin',$data);
 		
 	}
+    public function delete_regime($id)
+    {
+
+        $this->load->model('Admin_model');
+
+        $this->Admin_model->delete_regime($id);
+
+        redirect(base_url('admin/'));
+
+    }
+
+    public function delete_exercice($id)
+    {
+
+        $this->load->model('Admin_model');
+
+        $this->Admin_model->delete_exercice($id);
+
+        redirect(base_url('admin/'));
+
+    }
     
 
 }

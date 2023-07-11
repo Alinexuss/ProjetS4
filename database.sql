@@ -46,6 +46,7 @@ CREATE TABLE seance (
     repetition int,
     FOREIGN KEY (idExercice) REFERENCES exercice(idExercice)
 );
+create or replace view seance_detail as select s.idSceance,e.exercice,s.repetition from seance as s join exercice as e on s.idExercice=e.idExercice;
 
 CREATE TABLE regime (
     idRegime INT auto_increment PRIMARY KEY ,
@@ -60,6 +61,7 @@ CREATE TABLE session(
     duree INT,
     FOREIGN KEY (idRegime) REFERENCES regime(idRegime)
 );
+create or replace view session_detail as select s.idSession,r.aliment,s.duree from regime as r join session as s on r.idRegime=s.idRegime;
 
 insert into objectif(idObjectif,typeObjectif) values (0,"prendre du poinds");
 insert into objectif(idObjectif,typeObjectif) values (1,"perdre du poinds");

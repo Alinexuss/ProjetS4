@@ -15,4 +15,5 @@ class Add_session_model extends CI_Model {
         $this->db->insert('session', $this);
 
     }
+    
 }

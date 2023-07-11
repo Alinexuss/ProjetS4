@@ -21,6 +21,16 @@ class Add_seance extends CI_Controller {
 
         redirect(base_url('admin/'));
     }
+    public function delete_seance($id)
+    {
+
+        $this->load->model('Admin_model');
+
+        $this->Admin_model->delete_seance($id);
+
+        redirect(base_url('add_exercice/'));
+
+    }
 
         
 }

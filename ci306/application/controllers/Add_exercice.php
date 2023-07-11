@@ -3,8 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Add_exercice extends CI_Controller {
     public function index()
-	{
-		$this->load->view('add_exercice');
+	{   
+        $this->load->model('Admin_model');
+
+        $seance= $this->Admin_model->getAllSeance();
+
+        $data['seance'] = $seance;
+
+		$this->load->view('add_exercice',$data);
 		
 	}
     public function add(){

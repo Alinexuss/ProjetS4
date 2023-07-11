@@ -8,6 +8,7 @@
     </head>
         <body>
             <h3>tableau de bord</h3>
+            <a href="graph">voir graph</a>
             <h4>liste des utilisateurs</h4>
             <?php foreach($utilisateur as $user) { ?>
                 <?php echo $user->nom ?>
@@ -17,7 +18,7 @@
             <h4> liste des regimes</h4>
 
             <?php foreach($regime as $regimes) { ?>
-                <?php echo $regimes->aliment ?>
+                <?php echo $regimes->aliment ?><a href="admin/delete_regime/<?php  echo $regimes->idRegime ?>">  delete</a>
                 <br>
             <?php } ?>
             <a href="add_regime">ajouter un regime</a>
@@ -25,7 +26,7 @@
             <h4>liste des exercices</h4>
 
             <?php foreach($exercice as $exercices) { ?>
-                <?php echo $exercices->exercice ?>
+                <?php echo $exercices->exercice ?><a href="admin/delete_exercice/<?php  echo $exercices->idExercice ?>">  delete</a>
                 <br>
             <?php } ?>
             <a href="add_exercice">ajouter un exercice</a>

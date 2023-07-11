@@ -19,4 +19,11 @@
             <p><input type="number" name="prixUnitaire" placeholder="prix"></p>
             <p><input type="submit" value="OK"></p>
     </form>
+    <p><a href="add_session">ajouter une session de regime </a></p>
+    <h4>liste des session de regime</h4>
+    <?php foreach($session as $sessions) { ?>
+                <p>prendre <?php echo $sessions->duree ?> jours  <?php echo $sessions->aliment   ?><a href="add_regime/delete_session/<?php echo $sessions->idSession   ?>">  supprimer</a></p>
+               
+            <?php } ?>
+
 </body>
